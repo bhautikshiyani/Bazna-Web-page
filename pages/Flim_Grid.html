@@ -1,0 +1,776 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Film Grid -- BAZNA | web page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../css/responsive.css" rel="stylesheet" type="text/css" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.min.css">
+		<link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="../images/favicon.png" type="image/icon">
+		
+		<!-- Web Font -->
+		<link href="../fonts/web-font-icon/css/all.min.css" rel="stylesheet">
+		
+		<!--tab gallery-->
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/layout.css">
+
+
+	
+	
+	
+		
+		
+		<!-- JS Link -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mixitup.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/popper.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		
+		<!-- Sticky Header -->
+			<script>
+				$(window).scroll(function(){
+					var scroll = $(window).scrollTop();
+						if (scroll>50){
+							$("nav").addClass("navbar-custom");
+						}
+						else{
+							$("nav").removeClass("navbar-custom");
+						}
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$('.search-icon').click(function(){
+						$('body').addClass('search_popup_show')
+				})
+				$('.search_close').click(function(){
+						$('body').removeClass('search_popup_show')
+				})
+				});
+			</script>
+		<!-- popup surchmenu -->
+			<script>
+				$(document).ready(function(){
+					$('#myModal').on('shown.bs.modal', function () {
+					  $('#myInput').trigger('focus')
+					})
+				});
+			</script>
+		
+		
+		<!-- Back-to-top Start -->
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 100) {
+						$('.backto-top').addClass('on');
+					} else {
+						$('.backto-top').removeClass('on');
+					}
+				});
+				
+				$('.backto-top').click(function(){
+					$('html, body').animate({scrollTop : 0},800);
+					return false;
+				});
+			});
+		</script>
+		<!-- Back-to-top End -->
+		
+		
+		<!--tab gallery script -->
+		<script type="text/javascript">
+			$(function () {
+				
+				var filterList = {
+				
+					init: function () {
+					
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixItUp({
+						selectors: {
+						  target: '.portfolio',
+						  filter: '.filter'	
+					  },
+					  load: {
+					  filter: '.app'  
+					}     
+						});								
+					
+					}
+
+				};
+				
+				// Run the show!
+				filterList.init();
+				
+				
+			});	
+			</script>
+				
+		
+		
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+		<script src="../js/jquery.counterup.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$('.counter').counterUp({
+					delay: 10,
+					time: 1000
+				});
+			});
+		</script>
+	</head>
+		
+	<body class="pages film_grid">
+		<!-- Header Start -->
+		
+		<header class="position-relative w-100 ">
+			<div class="header-top d-none d-md-block">
+				<div class="container border-bottom">
+					<div class="row">
+						<div class="col-6 text-left">
+							<p class="text-grays">Welcome to Moviex Film Studio. 
+								<a href="#" class="text-decoration-none color-oranges">Have Any Question?</a></p>
+						</div>
+						<div class="col-6 text-right contect-email">
+							<a class="text-grays text-decoration-none mr-3" href="tel:+89756421301">
+								<i class="fas fa-phone color-oranges"></i>
+								+89756421301
+							</a>
+							<a class="text-grays text-decoration-none" href="mailto:support@gmail.com">
+								<i class="fas fa-envelope-open color-oranges"></i>
+								support@gmail.com
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<nav class="navbar navbar-expand-md navbar-dark ">
+				<div class="container">
+					<a class="navbar-brand">
+						<img src="../images/favicon.png" alt="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="../index.html">HOME</a>
+								
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="About.html">ABOUT</a>
+							</li>
+							
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" data-toggle="dropdown">PORTFOLIOS</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="Portfolios.html">Portfolios Grid</a>
+									<a class="dropdown-item" href="PortfoliosFullWidth.html">Portfolios Full Width</a>
+					
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" data-toggle="dropdown">PAGES</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="about.html">About</a>
+									<a class="dropdown-item" href="about-2.html">About-2</a>
+									<a class="dropdown-item" href="Actor-Grid-View.html">Actor Grid View</a>
+									<a class="dropdown-item" href="Actor_Details.html">Actor Details</a>
+									<a class="dropdown-item" href="Pricing.html">Price</a>
+									<a class="dropdown-item" href="Flim_Grid.html">Flim Grid</a>
+									<a class="dropdown-item" href="Flim_Black.html">Flim Black</a>
+									<a class="dropdown-item" href="Flim_Sidebar.html">Flim Sidebar</a>
+									<a class="dropdown-item" href="Video_Grid_View.html">Video Grid View</a>
+									<a class="dropdown-item" href="Video_Grid_With_Menu.html">Video Grid With Menu</a>
+								</div>
+							</li>
+							
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="BLOG.html">BLOG</a>
+								
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link px-0 mr-0 mr-md-1" href="Contect.html">Contact</a>
+							</li>
+	
+						</ul>
+						<div class="search-icon d-none d-md-none d-lg-block ml-1">
+                            <a class="text-light" href="#" data-toggle="modal" data-target="#SEARCH-BOX">
+								<i class="fas fa-search"></i>
+							</a>
+                        </div>
+					</div>
+				</div>
+				
+			</nav>
+			<div class="search_main ">
+				<div class="container">
+					<div class="search_close">
+						<i class="fas fa-times"></i>
+					</div>
+					<div class="search-box ">
+						<div class="search_inner position-absolute d-flex">
+						<form class="search-box_inner">
+							<input placeholder="Search Here..." type="text" class="search_text">
+						</form>
+						
+						
+						<a class="search_btn"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		<!-- Carousel Start -->
+					<div class="bgimage">
+						<div class="caption">
+							<h1 class="title text-center text-light">Film Grid</h1>
+						
+							<div class="breadcrumb">
+								<div class="breadcrumb-container d-flex">
+									<li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
+									<li class="mx-2 active arrow"><i class="fas fa-angle-double-right"></i></li>
+									<li class="breadcrumb-item " aria-current="page">Film Grid</li>
+								</div>
+							</div>
+						</div>
+					</div>
+		<!--- Carousel End --->
+		
+		
+		<!--gallery strat-->
+	<section class="gallery_normalize">
+		<div class="container position-relative">
+
+			<ul id="filters" class="clearfix">
+				<li><span class="filter active" data-filter=".all">SHOW ALL</span></li>
+				<li><span class="filter" data-filter=".app">ACTION</span></li>
+				<li><span class="filter" data-filter=".card">MUSIC</span></li>
+				<li><span class="filter" data-filter=".icon">VIDEO</span></li>
+				<li><span class="filter" data-filter=".logo">BUSINESS</span></li>
+				<li><span class="filter" data-filter=".web">DRAMA</span></li>
+			</ul>
+
+			<div id="portfoliolist">
+				<div class="portfolio all" data-cat="all">
+					<div class="portfolio-wrapper text-center">				
+						<a href="#">
+							<img src="../images/07-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>				
+
+				<div class="portfolio all" data-cat="all">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/06-1.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+						<div class="films-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+						<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+						<span>Animation</span>
+						</div>
+					</div>
+				</div>		
+				
+				<div class="portfolio all" data-cat="all">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/05-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>				
+				
+				<div class="portfolio all" data-cat="all">
+					<div class="portfolio-wrapper">				
+						<a href="#" class="justify-content-center">
+							<img src="../images/04-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+						<div class="films-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+						<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+						<span>Animation</span>
+						</div>
+					</div>
+				</div>	
+							
+				<div class="portfolio all" data-cat="all">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/03-3.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+						<div class="films-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+						<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+						<span>Animation</span>
+						</div>
+					</div>
+				</div>			
+				
+				<div class="portfolio all" data-cat="all">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/02-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="portfolio app" data-cat="app">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/07-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="portfolio app" data-cat="app">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/06-1.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>																																							
+				
+				<div class="portfolio card" data-cat="card">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/03-3.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>														
+				
+				<div class="portfolio card" data-cat="card">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/05-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>				
+
+				<div class="portfolio card" data-cat="card">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/02-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>																	
+						
+				
+				<div class="portfolio icon" data-cat="icon">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/06-1.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>							
+
+				<div class="portfolio icon" data-cat="icon">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/03-3.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>																								
+
+				
+				<div class="portfolio logo" data-cat="logo">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/05-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>																	
+
+				<div class="portfolio logo" data-cat="logo">
+					<div class="portfolio-wrapper">				
+						<a href="#" class="justify-content-center">
+							<img src="../images/04-2.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>																																																																
+
+				<div class="portfolio logo" data-cat="logo">
+					<div class="portfolio-wrapper">				
+						<a href="#">
+							<img src="../images/03-3.jpg" class="img-fluid">
+						</a>
+						<div class="text-center film-txt">
+							<div class="films-rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<h1><a href="http://bdevs.net/theme/bazna/flim/jump-city/" class="text-decoration-none">Jump City</a></h1>
+							<span>Animation</span>
+						</div>
+					</div>
+				</div>			
+				
+				<div class="portfolio web" data-cat="web">
+					<div class="portfolio-wrapper">				
+						<div class="gallery-img portfolios-body">
+							<div class="gallery-img2">
+								<img src="../images/flim-03.jpg" class="w-100 img-fluid d-block" alt=""/>
+							</div>
+							<div class="portfolios-text">
+								<div class="gallery-video popup-play position-absolute">
+									<a class="popup-video d-inline-block" data-fancybox href="https://www.youtube.com/watch?v=coOKvrsmQiI">
+										<i class="fas fa-play"></i>
+									</a>
+								</div>
+								<div class="gallery-txt position-absolute text-center">
+									<h1><a href="#">Dirna Tun <br>Business</a></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>									
+				
+				<div class="portfolio web" data-cat="web">
+					<div class="portfolio-wrapper">				
+						<div class="gallery-img portfolios-body">
+							<div class="gallery-img2">
+								<img src="../images/flim-04.jpg" class="w-100 img-fluid d-block" alt=""/>
+							</div>
+							<div class="portfolios-text">
+								<div class="gallery-video popup-play position-absolute">
+									<a class="popup-video d-inline-block" data-fancybox href="https://www.youtube.com/watch?v=coOKvrsmQiI">
+										<i class="fas fa-play"></i>
+									</a>
+								</div>
+								<div class="gallery-txt position-absolute text-center">
+									<h1><a href="#">Dirna Tun <br>Business</a></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+					<div class="row container">
+					<div class="col-12 text-left text-md-center mt-2 mt-md-5">
+						<a class="btn text-light my-4 my-md-3">Viwe All Works
+							<i class="fas fa-arrow-right"></i>
+						</a>
+					</div>
+			</div>
+	</section>
+			
+		<!--gallery end-->
+		
+		<!--our services Strat-->
+			<section style="background:url('../images/bg-23.jpg');">
+					<div class="container dont-hesitate">
+						<div class="row justify-content-center">
+							<div class="col-12 col-lg-10 title text-center elementor-header join-email ">
+								<span>Join Our Team To Get Creative Service</span>
+								<h1 class="mb-2 mb-md-5">Don't Hesitate To Contact With Me. I'm always ready to meet you</h1>
+								<h2>Email Me: supportme@gmail.com</h2>
+							</div>
+						</div>
+						
+						
+					</div>
+			</section>
+		<!--our services End-->
+				
+		
+		
+		<!--footer strat-->
+			<footer>
+				<div class="footer-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-data-1">
+									<a href="#" class="mb-4 d-block">
+										<img src="../images/favicon.png" alt="logo">
+									</a>
+									<p class="text-dark mb-4">Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostru</p>
+									<div class="social-icon">
+										<a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+										<a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+										<a href="http://google-plus.com"><i class="fab fa-google-plus-g"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-3 md-lg-3">
+								<div class="footer-data-2">
+									<div class="footer-txt">
+										<h4 class="mb-4 ">Contact Info</h4>
+									</div>
+									<ul class="list-unstyled" >
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="fas fa-map-marked-alt"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>Address<h4>
+												<p>House - 4, Rosd - 7, East City. Sydney. Australya.</p>
+												
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="fas fa-phone"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>phone Us<h4>
+												<p >+821 (2365) 456 90</p>
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="far fa-envelope"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>Mail Us<h4>
+												<p>support@gmail.com</p>
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-data-2">
+									<div class="footer-txt">
+										<h4 class="mb-4"> Services List</h4>
+									</div> 
+									<div class="service-list">
+										<ul class="list-unstyled">
+											<li><a href="#">Corporate Videography</a></li>
+											<li><a href="#">Video Editing / Effects</a></li>
+											<li><a href="#">Teleprompter Services</a></li>
+											<li><a href="#">Get Your Final Visual Effects</a></li>
+											<li><a href="#">Idea Generator & Direction</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-txt">
+									<h4 class="mb-4"> Services List</h4>
+								</div> 
+								<ul class="instagram-img list-unstyled d-flex flex-wrap">
+									<li><a><img src="../images/inta-1.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-2.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-3.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-4.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-5.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-6.jpg" class="img-fluid"></a><li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6 text-light d-block text-center text-md-left">
+									<p>
+										Copyright © Fitaza 2018. All rights reserved.                     
+									</p>
+								</div>
+							
+								<div class="col-12 col-md-6 text-light d-block text-center text-md-right">
+									<p>
+										 Created by: ThemeChampion                     
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</footer>	
+		<!-- footer end -->
+		
+		
+		
+			<!-- Back-to-top Start -->
+		
+				<div class="backto-top">
+					<i class="fas fa-arrow-up"></i>
+				</div>
+			
+		<!-- Back-to-top End -->
+			
+	</body>
+</html>

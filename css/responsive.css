@@ -1,0 +1,399 @@
+/* Mobile Portrait Start */
+
+@media(max-width: 767.8px){
+	.title h1 {
+		font-size: 35px;
+	}
+	html .navbar-collapse{
+		position:fixed;
+		width:100%;
+		height:100vh;
+		background:#2a2a2a;
+		top:62px;
+		left:0px;
+		display:block!important;
+		transform:translateX(100%);
+		transition:all 0.5s ;
+	}
+	.navbar-collapse.show{
+		transform:translateX(0%);
+		border-radius:0;	
+	}
+	.test-1-img i {
+    /* position: absolute; */
+    top: -30px;
+    right: 19px;
+    font-size: 63px;}
+	html .pages .navbar-collapse{
+		top:55px;
+	}
+	.question-1 .question-text h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+	}
+	.question-1 .question-text p {
+		font-size: 13px;
+	}
+}
+@media(max-width: 575px){
+	section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	/* Header Start */
+	header{
+		background: transparent;
+		z-index: 17;
+		top:0;
+	}	
+	
+	html .header-top{
+		padding: 0;
+	}
+	.header-top div{
+		display: none !important;
+	}
+	/* Header End */
+	
+	
+	/* Carousel Start */
+	
+	html .carousel-indicators {
+		bottom: -7px;
+	}
+	html .carousel-indicators li{
+		width: 7px;
+		height: 0px;
+	}
+
+	html .carousel-caption p{
+		font-size: 10px;
+		padding-bottom:5px;
+		margin-bottom:0px;
+	}
+	html .carousel-control-next-icon{
+		width: 16px;
+    height: 15px;
+	}
+	/* Carousel End*/
+	.experience-header p {
+		padding-right: 0px !important;
+	}
+	
+	
+	
+	.join-content h1 {
+		font-size: 35px;
+		margin-bottom: 6px;
+	}
+	.join-team {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.join-content span {
+		font-size: 14px;
+	}
+	.join-email h1{
+		    font-size: 22px!important;
+	}
+	.join-email h2{
+		font-size: 15px!important;
+		margin-top:30px;
+	}
+	.pages.film_grid .film-txt > h1 > a {
+		font-size:21px;
+		
+	}
+	.gallery_normalize h1{
+		margin:0px!important;
+	}
+	.search_span_none span{
+		display:none;
+	}
+}
+/* Mobile Portrait End */
+
+/* Mobile Landscape Start*/
+
+@media(min-width: 576px) and (max-width: 767px){
+	/* Header Start */
+	section {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+	
+	header{
+		background:transparent;
+		z-index: 9;
+		top:0px;
+	}
+	
+	html .header-top{
+		padding: 0;
+	}
+	.header-top div{
+		display: none !important;
+	}
+	/* Header End */
+	
+	/* Carousel Start */
+	html .carousel-indicators li{
+		width: 13px;
+		height: 0px;
+	}
+	
+	html .carousel-caption{
+		top: 30%;
+		z-index: 1;
+	}
+	html .carousel-caption p{
+		font-size: 16px;
+	}
+	/* Carousel End */
+	
+	.about-fitaza p {
+		font-size: 13px;
+		margin-bottom: 9px;
+	}
+	.experience-header p {
+		padding-right: 0px !important;
+	}
+	.title.join-email h1{
+		    font-size: 26px!important;
+	}
+	.title.join-email h2{
+		    font-size: 22px;
+    margin-top: 36px;
+	}
+}
+@media(max-width: 767.8px){
+	
+	.title h1 {
+	font-size: 35px;
+	}
+	html .navbar-collapse{
+		position:fixed;
+		width:100%;
+		height:100vh;
+		background:#2a2a2a;
+		top:62px;
+		left:0px;
+		display:block!important;
+		transform:translateX(100%);
+		transition:all 0.5s ;
+	}
+	.navbar-collapse.show{
+		transform:translateX(0%);
+		border-radius:0;	
+	}
+	
+	html .pages .navbar-collapse{
+		top:55px;
+	}
+	html .carousel-caption{
+		left:0;
+		right:0;
+	}
+	html .carousel-caption {
+		padding:0px 15px;
+	}
+	html .carousel-caption h1 {
+		font-size: 35px;
+		margin-bottom: 27px !important;
+	}
+	
+	
+	html .carousel .carousel-inner [class*="carousel-control-"]{
+		
+		display:none;
+	}
+	
+	.oue-services-img{
+		margin-bottom:15px;
+		margin-right:0px;
+		float:none;
+	}
+	.oue-services-txt p{
+		margin-right: 0px;
+	}
+	.blog-img-body:before{
+		display:none;
+	}
+	.reviwe-bg-txt h1{
+		font-size:45px;
+	}
+	.reviwe-bg-txt{
+		left: 0;
+		right: 0;
+		top: 70%;
+	}
+	html .reviwe .reviwe-text {
+		padding-right:0!important;
+	}
+	
+	.reviwe-text p {
+		padding-right:38px!important;
+		font-size: 16px;
+	}
+	html .reviwe-text {
+		padding-left: 26px;
+	}
+	.counter-up {
+		transform: translateY(0px);
+	}
+	.blog-img-body {
+		margin-left: 0px;
+    }
+	.experience-header p {
+		padding-right: 22px;
+	}
+	.experience-header .bg-icon{
+		top:0;
+		right:0;
+	}
+	.join-content h1 {
+		font-size: 45px;
+		margin-bottom: 10px;
+	}
+	.join-content span {
+		font-size: 14px;
+	}
+	
+}
+/*tablet start*/
+@media(min-width: 768px) and (max-width: 991px){
+	section {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.title h1{
+		font-size:38px;
+	}
+	.about p{
+		font-size: 12px;
+	}
+	html .carousel .carousel-inner [class*="carousel-control-"]{
+		display:none;
+	}
+	
+	html .caption-txt h1{
+		font-size:46px;
+	}
+	html .btn{
+			padding: 16px 37px;
+	}
+	html .header-info ul li a {
+		margin-right: 12px;
+		font-size: 13px;
+	}
+	html .header-info ul li i {
+		margin-right: 1px;
+		font-size:12px;
+	}
+	.header-social-icon ul li a i{
+		font-size:14px;
+	}
+	html .header-top{
+		padding: 8px 0px !important;
+	}
+	
+	
+	html nav div div ul li {
+		margin-left: 15px;
+	}
+	html .navbar-brand{
+		margin-right:0px;
+	}
+	html .navbar-brand img{
+	    width: 84%;
+	}
+	html .navbar-dark .navbar-nav .nav-link {
+		font-size: 13px;
+	}
+	
+	html .carousel-caption h5 {
+		font-size: 36px;
+	}
+	html .carousel-caption p {
+		font-size: 19px;
+	}
+	html .carousel-indicators li {
+		width: 13px;
+		height: 0px;
+	}
+	html .carousel-caption {
+		top: 79px;
+	}
+		
+	html .contect-us p{
+		font-size:14px;
+	}
+	
+	.top-class div>h4 {
+		margin-top: 8px;
+		margin-bottom: 23px;
+		font-size: 16px;
+	}
+	.blog-img-body:before {
+			height: 99%;
+			width: 99%;
+		}
+	.blog-img-body {
+		margin-bottom: 40px;
+	}
+	.reviwe-bg-txt h1{
+			font-size:112px;
+	}
+	.reviwe-bg-txt{
+		top: 55%;
+	}
+	
+	.experience-header p {
+		padding-right: 40px;
+	}
+	.experience-header .bg-icon{
+		top:0;
+		right:0;
+	}
+	.reviwe-text p {
+    
+    font-size: 21px;
+	}
+	.question-1 .question-text h1 {
+    font-size: 49px;
+    margin-bottom: 18px;}
+.question-1 .question-text p {
+font-size: 14px;}
+    
+}
+/*tablet end*/
+/*-------------------------------------------------------MINI_LAPTOP-----------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px){
+	html .header-top{
+		padding-bottom:9px !important;
+		padding-top:9px !important;
+	}
+	html .carousel-caption {
+		top: 111px;
+	} 
+	html .carousel-caption p {
+		font-size: 19px;
+	}
+	.reviwe-bg-txt h1{
+			font-size:150px;
+	}
+	.blog-img-body:before{
+	height: 278px;
+    width: 427px;
+	}
+
+}
+
+
+
+@media (min-width: 1200px){
+html .container {
+    max-width: 1200px;
+} 
+}

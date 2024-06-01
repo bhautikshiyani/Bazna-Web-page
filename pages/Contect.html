@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Contact -- BAZNA | web page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../css/responsive.css" rel="stylesheet" type="text/css" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.min.css">
+		<link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="../images/favicon.png" type="image/icon">
+		
+		<!-- Web Font -->
+		<link href="../fonts/web-font-icon/css/all.min.css" rel="stylesheet">
+		
+		<!-- JS Link -->
+		<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/popper.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		
+		<!-- Sticky Header -->
+			<script>
+				$(window).scroll(function(){
+					var scroll = $(window).scrollTop();
+						if (scroll>50){
+							$("nav").addClass("navbar-custom");
+						}
+						else{
+							$("nav").removeClass("navbar-custom");
+						}
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$('.search-icon').click(function(){
+						$('body').addClass('search_popup_show')
+				})
+				$('.search_close').click(function(){
+						$('body').removeClass('search_popup_show')
+				})
+				});
+			</script>
+		<!-- popup surchmenu -->
+			<script>
+				$(document).ready(function(){
+					$('#myModal').on('shown.bs.modal', function () {
+					  $('#myInput').trigger('focus')
+					})
+				});
+			</script>
+		
+		
+		<!-- Back-to-top Start -->
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 100) {
+						$('.backto-top').addClass('on');
+					} else {
+						$('.backto-top').removeClass('on');
+					}
+				});
+				
+				$('.backto-top').click(function(){
+					$('html, body').animate({scrollTop : 0},800);
+					return false;
+				});
+			});
+		</script>
+		<!-- Back-to-top End -->
+		<!-- owl-carousel start -->
+		<script>
+			$(document).ready(function(){
+				$('.owl-carousel-1').owlCarousel({
+					loop:true,
+					margin:10,
+					dots:false,
+					autoplay:true,
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},
+						1000:{
+							items:4
+						}
+					}
+				})
+				
+				$('.owl-carousel-2').owlCarousel({
+					loop:true,
+					margin:10,
+					dots:false,
+					autoplay:true,
+					
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},
+						1000:{
+							items:6
+						}
+					}
+				})
+				$('.owl-carousel-3').owlCarousel({
+					loop:true,
+					margin:10,
+					dots:true,
+					items:1,
+					nav:true,
+				})
+				
+			});
+		</script>
+		<!-- owl-carousel end -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+		<script src="../js/jquery.counterup.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$('.counter').counterUp({
+					delay: 10,
+					time: 1000
+				});
+			});
+		</script>
+	</head>
+		
+	<body class="pages">
+		<!-- Header Start -->
+		
+		<header class="position-relative w-100 ">
+			<div class="header-top d-none d-md-block">
+				<div class="container border-bottom">
+					<div class="row">
+						<div class="col-6 text-left">
+							<p class="text-grays">Welcome to Moviex Film Studio. 
+								<a href="#" class="text-decoration-none color-oranges">Have Any Question?</a></p>
+						</div>
+						<div class="col-6 text-right contect-email">
+							<a class="text-grays text-decoration-none mr-3" href="tel:+89756421301">
+								<i class="fas fa-phone color-oranges"></i>
+								+89756421301
+							</a>
+							<a class="text-grays text-decoration-none" href="mailto:support@gmail.com">
+								<i class="fas fa-envelope-open color-oranges"></i>
+								support@gmail.com
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<nav class="navbar navbar-expand-md navbar-dark ">
+				<div class="container">
+					<a class="navbar-brand">
+						<img src="../images/favicon.png" alt="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="../index.html">HOME</a>
+								
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="About.html">ABOUT</a>
+							</li>
+							
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" data-toggle="dropdown">PORTFOLIOS</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="Portfolios.html">Portfolios Grid</a>
+									<a class="dropdown-item" href="PortfoliosFullWidth.html">Portfolios Full Width</a>
+					
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" data-toggle="dropdown">PAGES</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="about.html">About</a>
+									<a class="dropdown-item" href="about-2.html">About-2</a>
+									<a class="dropdown-item" href="Actor-Grid-View.html">Actor Grid View</a>
+									<a class="dropdown-item" href="Actor_Details.html">Actor Details</a>
+									<a class="dropdown-item" href="Pricing.html">Price</a>
+									<a class="dropdown-item" href="Flim_Grid.html">Flim Grid</a>
+									<a class="dropdown-item" href="Flim_Black.html">Flim Black</a>
+									<a class="dropdown-item" href="Flim_Sidebar.html">Flim Sidebar</a>
+									<a class="dropdown-item" href="Video_Grid_View.html">Video Grid View</a>
+									<a class="dropdown-item" href="Video_Grid_With_Menu.html">Video Grid With Menu</a>
+									
+								</div>
+							</li>
+							
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="BLOG.html" >BLOG</a>
+								
+							</li>
+							
+							<li class="nav-item active">
+								<a class="nav-link px-0 mr-0 mr-md-1 " href="Contect.html">Contact</a>
+							</li>
+	
+						</ul>
+						<div class="search-icon d-none d-md-none d-lg-block ml-1">
+                            <a class="text-light" href="#" data-toggle="modal" data-target="#SEARCH-BOX">
+								<i class="fas fa-search"></i>
+							</a>
+                        </div>
+					</div>
+				</div>
+				
+			</nav>
+			<div class="search_main ">
+				<div class="container">
+					<div class="search_close">
+						<i class="fas fa-times"></i>
+					</div>
+					<div class="search-box ">
+						<div class="search_inner position-absolute d-flex">
+						<form class="search-box_inner">
+							<input placeholder="Search Here..." type="text" class="search_text">
+						</form>
+						
+						
+						<a class="search_btn"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		<!-- Carousel Start -->
+					<div class="bgimage">
+						<div class="caption">
+							<h1 class="title text-center text-light">Contact</h1>
+						
+							<div class="breadcrumb">
+								<div class="breadcrumb-container d-flex">
+									<li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
+									<li class="mx-2 active arrow"><i class="fas fa-angle-double-right"></i></li>
+									<li class="breadcrumb-item " aria-current="page">Contact</li>
+								</div>
+							</div>
+						</div>
+					</div>
+		<!--- Carousel End --->
+		
+		
+			
+		<section class="gmap">
+		<div class="google-map">
+		<iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1260220.9680381722!2d-1.0053802627956925!3d51.94404333430114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1568702901571!5m2!1sen!2sin" width="100%" height="800px" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+		</section>
+		
+		<section class="form-contry ">
+			<div class="container">
+				<div class="row  form-contry-body position-relative">
+					<div class="col-12 col-md-4">
+						<div class="contry">
+							<h3>Lodon</h3>
+							<div class="contact-link">
+							<ul class="list-unstyled">
+								<li class="d-flex ">
+									<div class="link-icon"><i class="fas fa-map-marked-alt"></i></div>
+									<div class="add ml-3">
+										<p>82 Bernie Greens Apt. 210, Hendon Way, London, UK</p>
+									</div>
+								</li>
+								<li class="d-flex ">
+									<div class="link-icon"><i class="far fa-envelope-open"></i></div>
+									<div class="add ml-3">
+										<p>moviex@example.com</p>
+									</div>
+								</li>
+								<li class="d-flex">
+									<div class="link-icon"><i class="fas fa-phone"></i></i></div>
+									<div class="add ml-3">
+										<p>+53 213 5941 295</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="contry">
+							<h3>Australia</h3>
+						<div class="contact-link">
+							<ul class="list-unstyled">
+								<li class="d-flex">
+									<div class="link-icon"><i class="fas fa-map-marked-alt"></i></div>
+									<div class="add ml-3">
+										<p>82 Bernie Greens Apt. 210, Hendon Way, London, UK</p>
+									</div>
+								</li>
+								<li class="d-flex ">
+									<div class="link-icon"><i class="far fa-envelope-open"></i></div>
+									<div class="add ml-3">
+										<p>moviex@example.com</p>
+									</div>
+								</li>
+								<li class="d-flex">
+									<div class="link-icon"><i class="fas fa-phone"></i></i></div>
+									<div class="add ml-3">
+										<p>+53 213 5941 295</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="contry">
+							<h3>New York</h3>
+						<div class="contact-link">
+							<ul class="list-unstyled">
+								<li class="d-flex ">
+									<div class="link-icon"><i class="fas fa-map-marked-alt"></i></div>
+									<div class="add ml-3">
+										<p>82 Bernie Greens Apt. 210, Hendon Way, London, UK</p>
+									</div>
+								</li>
+								<li class="d-flex ">
+									<div class="link-icon"><i class="far fa-envelope-open"></i></div>
+									<div class="add ml-3">
+										<p>moviex@example.com</p>
+									</div>
+								</li>
+								<li class="d-flex">
+									<div class="link-icon"><i class="fas fa-phone"></i></i></div>
+									<div class="add ml-3">
+										<p>+53 213 5941 295</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+			
+		
+		
+		<section class="pt-0">
+			<div class="container">
+				<div class="row position-relative">
+					<div class="col-md-4">
+						<div class=" title text-left elementor-header">
+								<span>Any Questions?</span>
+								<h1>Let's Talk</h1>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+							</div>
+					</div>
+					<div class="col-md-8">
+						
+						<div class="form-box" style="background:#fff;">
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<input type="text" class="form-control w-100 wow bounceInLeft" data-wow-duration="2s" placeholder="Your Name"/>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<input type="email" class="form-control w-100 wow bounceInRight" data-wow-duration="2s" placeholder="Your email"/>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<input type="text" class="form-control w-100 wow bounceInLeft" data-wow-duration="2s" placeholder="Your Phone"/>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<input type="text" class="form-control w-100 wow bounceInRight" data-wow-duration="2s" placeholder="Your Subject"/>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+											<textarea class="form-control wow bounceInLeft" data-wow-duration="2s" placeholder="Your Message"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<a href="#" class="btn btn-about mt-3">Send Message</a>
+								</div>
+							</form>
+						
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+				
+		
+		
+		<!--footer strat-->
+			<footer>
+				<div class="footer-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-data-1">
+									<a href="#" class="mb-4 d-block">
+										<img src="../images/favicon.png" alt="logo">
+									</a>
+									<p class="text-dark mb-4">Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostru</p>
+									<div class="social-icon">
+										<a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+										<a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+										<a href="http://google-plus.com"><i class="fab fa-google-plus-g"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-3 md-lg-3">
+								<div class="footer-data-2">
+									<div class="footer-txt">
+										<h4 class="mb-4 ">Contact Info</h4>
+									</div>
+									<ul class="list-unstyled" >
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="fas fa-map-marked-alt"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>Address<h4>
+												<p>House - 4, Rosd - 7, East City. Sydney. Australya.</p>
+												
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="fas fa-phone"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>phone Us<h4>
+												<p >+821 (2365) 456 90</p>
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="far fa-envelope"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>Mail Us<h4>
+												<p>support@gmail.com</p>
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-data-2">
+									<div class="footer-txt">
+										<h4 class="mb-4"> Services List</h4>
+									</div> 
+									<div class="service-list">
+										<ul class="list-unstyled">
+											<li><a href="#">Corporate Videography</a></li>
+											<li><a href="#">Video Editing / Effects</a></li>
+											<li><a href="#">Teleprompter Services</a></li>
+											<li><a href="#">Get Your Final Visual Effects</a></li>
+											<li><a href="#">Idea Generator & Direction</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-txt">
+									<h4 class="mb-4"> Services List</h4>
+								</div> 
+								<ul class="instagram-img list-unstyled d-flex flex-wrap">
+									<li><a><img src="../images/inta-1.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-2.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-3.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-4.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-5.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-6.jpg" class="img-fluid"></a><li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6 text-light d-block text-center text-md-left">
+									<p>
+										Copyright © Fitaza 2018. All rights reserved.                     
+									</p>
+								</div>
+							
+								<div class="col-12 col-md-6 text-light d-block text-center text-md-right">
+									<p>
+										 Created by: ThemeChampion                     
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</footer>	
+		<!-- footer end -->
+		
+		
+		
+			<!-- Back-to-top Start -->
+		
+				<div class="backto-top">
+					<i class="fas fa-arrow-up"></i>
+				</div>
+			
+		<!-- Back-to-top End -->
+			
+	</body>
+</html>

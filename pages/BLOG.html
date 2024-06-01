@@ -1,0 +1,602 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Blog -- BAZNA | web page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../css/responsive.css" rel="stylesheet" type="text/css" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.min.css">
+		<link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="../images/favicon.png" type="image/icon">
+		
+		<!-- Web Font -->
+		<link href="../fonts/web-font-icon/css/all.min.css" rel="stylesheet">
+		
+		<!-- JS Link -->
+		<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/popper.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		
+		<!-- Sticky Header -->
+			<script>
+				$(window).scroll(function(){
+					var scroll = $(window).scrollTop();
+						if (scroll>50){
+							$("nav").addClass("navbar-custom");
+						}
+						else{
+							$("nav").removeClass("navbar-custom");
+						}
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$('.search-icon').click(function(){
+						$('body').addClass('search_popup_show')
+				})
+				$('.search_close').click(function(){
+						$('body').removeClass('search_popup_show')
+				})
+				});
+			</script>
+		<!-- popup surchmenu -->
+			<script>
+				$(document).ready(function(){
+					$('#myModal').on('shown.bs.modal', function () {
+					  $('#myInput').trigger('focus')
+					})
+				});
+			</script>
+		
+		
+		<!-- Back-to-top Start -->
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 100) {
+						$('.backto-top').addClass('on');
+					} else {
+						$('.backto-top').removeClass('on');
+					}
+				});
+				
+				$('.backto-top').click(function(){
+					$('html, body').animate({scrollTop : 0},800);
+					return false;
+				});
+			});
+		</script>
+		<!-- Back-to-top End -->
+		<!-- owl-carousel start -->
+		<script>
+			$(document).ready(function(){
+				$('.owl-carousel-1').owlCarousel({
+					loop:true,
+					margin:10,
+					dots:false,
+					autoplay:true,
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},
+						1000:{
+							items:4
+						}
+					}
+				})
+				
+				$('.owl-carousel-2').owlCarousel({
+					loop:true,
+					margin:10,
+					dots:false,
+					autoplay:true,
+					
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},
+						1000:{
+							items:6
+						}
+					}
+				})
+				$('.owl-carousel-3').owlCarousel({
+					loop:true,
+					margin:10,
+					dots:true,
+					items:1,
+					nav:true,
+				})
+				
+			});
+		</script>
+		<!-- owl-carousel end -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+		<script src="../js/jquery.counterup.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$('.counter').counterUp({
+					delay: 10,
+					time: 1000
+				});
+			});
+		</script>
+	</head>
+		
+	<body class="pages">
+		<!-- Header Start -->
+		
+		<header class="position-relative w-100 ">
+			<div class="header-top d-none d-md-block">
+				<div class="container border-bottom">
+					<div class="row">
+						<div class="col-6 text-left">
+							<p class="text-grays">Welcome to Moviex Film Studio. 
+								<a href="#" class="text-decoration-none color-oranges">Have Any Question?</a></p>
+						</div>
+						<div class="col-6 text-right contect-email">
+							<a class="text-grays text-decoration-none mr-3" href="tel:+89756421301">
+								<i class="fas fa-phone color-oranges"></i>
+								+89756421301
+							</a>
+							<a class="text-grays text-decoration-none" href="mailto:support@gmail.com">
+								<i class="fas fa-envelope-open color-oranges"></i>
+								support@gmail.com
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<nav class="navbar navbar-expand-md navbar-dark ">
+				<div class="container">
+					<a class="navbar-brand">
+						<img src="../images/favicon.png" alt="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="../index.html">HOME</a>
+								
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link px-0" href="About.html">ABOUT</a>
+							</li>
+							
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" data-toggle="dropdown">PORTFOLIOS</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="Portfolios.html">Portfolios Grid</a>
+									<a class="dropdown-item" href="PortfoliosFullWidth.html">Portfolios Full Width</a>
+					
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" data-toggle="dropdown">PAGES</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="about.html">About</a>
+									<a class="dropdown-item" href="about-2.html">About-2</a>
+									<a class="dropdown-item" href="Actor-Grid-View.html">Actor Grid View</a>
+									<a class="dropdown-item" href="Actor_Details.html">Actor Details</a>
+									<a class="dropdown-item" href="Pricing.html">Price</a>
+									<a class="dropdown-item" href="Flim_Grid.html">Flim Grid</a>
+									<a class="dropdown-item" href="Flim_Black.html">Flim Black</a>
+									<a class="dropdown-item" href="Flim_Sidebar.html">Flim Sidebar</a>
+									<a class="dropdown-item" href="Video_Grid_View.html">Video Grid View</a>
+									<a class="dropdown-item" href="Video_Grid_With_Menu.html">Video Grid With Menu</a>
+									
+								</div>
+							</li>
+							
+							
+							<li class="nav-item active">
+								<a class="nav-link px-0" href="BLOG.html" >BLOG</a>
+								
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link px-0 mr-0 mr-md-1" href="Contect.html">Contact</a>
+							</li>
+	
+						</ul>
+						<div class="search-icon d-none d-md-none d-lg-block ml-1">
+                            <a href="#" data-toggle="modal" data-target="#SEARCH-BOX">
+								<i class="fas fa-search"></i>
+							</a>
+                        </div>
+					</div>
+				</div>
+				
+			</nav>
+			<div class="search_main ">
+				<div class="container">
+					<div class="search_close">
+						<i class="fas fa-times"></i>
+					</div>
+					<div class="search-box ">
+						<div class="search_inner position-absolute d-flex">
+						<form class="search-box_inner">
+							<input placeholder="Search Here..." type="text" class="search_text">
+						</form>
+						
+						
+						<a class="search_btn"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		<!-- Carousel Start -->
+					<div class="bgimage">
+						<div class="caption">
+							<h1 class="title text-center text-light">Blog</h1>
+						
+							<div class="breadcrumb">
+								<div class="breadcrumb-container d-flex">
+									<li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
+									<li class="mx-2 active arrow"><i class="fas fa-angle-double-right"></i></li>
+									<li class="breadcrumb-item " aria-current="page">Blog</li>
+								</div>
+							</div>
+						</div>
+					</div>
+		<!--- Carousel End --->
+		
+		
+			
+		
+		<!-- blog-page Strat-->
+			<section class="blog-page-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="blog-page border-bottom mt-4 ">
+								<div class="mb-4">
+								<a class="#">
+									<img src="../images/b1.jpg" class="img-fluid">
+								</a>
+								</div>
+								<div class="blog-1-text">
+									<div class="blog-1-text-header mb-2 mb-md-3">
+										<a href="#" class="text-decoration-none"><h3>The well known health website has quite a collection of blogs.</h3></a>
+									</div>
+									<div  class="mt-1 mb-2 mb-md-4 blog-icon">
+										<span><a href="#" class="text-decoration-none"><i class="far fa-calendar-check"></i> July 16, 2019 </a></span>
+										<span><a href="#" class="text-decoration-none"><i class="far fa-user"></i> BAZNA </a></span>
+										<span><a href="#" class="text-decoration-none"><i class="far fa-comments"></i>3 Comments </a></span>
+									</div>
+									<div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitatio ullamco laboris nisi utaliquip ex ea commodo. Bccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum. Sed ut perspiciatisunde omnis iste natus error sit […]</p>
+									</div>
+									<div>
+											<a class="btn text-light mt-2 mb-5">Read More
+												<i class="fas fa-arrow-right"></i>
+											</a>
+										</div>
+								</div>
+							</div>
+							
+							<div class="blog-page border-bottom mt-5 ">
+								<div class="mb-4">
+								<a class="#">
+									<img src="../images/blog-1.jpg" class="img-fluid">
+								</a>
+								</div>
+								<div class="blog-1-text">
+									<div class="blog-1-text-header mb-3">
+										<a href="#" class="text-decoration-none"><h3>The well known health website has quite a collection of blogs.</h3></a>
+									</div>
+									<div  class="mt-1 mb-4 blog-icon">
+										<span><a href="#" class="text-decoration-none"><i class="far fa-calendar-check"></i> July 16, 2019 </a></span>
+										<span><a href="#" class="text-decoration-none"><i class="far fa-user"></i> BAZNA </a></span>
+										<span><a href="#" class="text-decoration-none"><i class="far fa-comments"></i>3 Comments </a></span>
+									</div>
+									<div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitatio ullamco laboris nisi utaliquip ex ea commodo. Bccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum. Sed ut perspiciatisunde omnis iste natus error sit […]</p>
+									</div>
+									<div>
+											<a class="btn text-light mt-2 mb-5">Read More
+												<i class="fas fa-arrow-right"></i>
+											</a>
+										</div>
+								</div>
+							</div>
+
+							
+							<div class="blog-page border-bottom mt-5 ">
+								<div class="mb-4">
+								<a class="#">
+									<img src="../images/blog-2.jpg" class="img-fluid">
+								</a>
+								</div>
+								<div class="blog-1-text">
+									<div class="blog-1-text-header mb-3">
+										<a href="#" class="text-decoration-none"><h3>The well known health website has quite a collection of blogs.</h3></a>
+									</div>
+									<div  class="mt-1 mb-4 blog-icon">
+										<span><a href="#" class="text-decoration-none"><i class="far fa-calendar-check"></i> July 16, 2019 </a></span>
+										<span><a href="#" class="text-decoration-none"><i class="far fa-user"></i> BAZNA </a></span>
+										<span><a href="#" class="text-decoration-none"><i class="far fa-comments"></i>3 Comments </a></span>
+									</div>
+									<div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitatio ullamco laboris nisi utaliquip ex ea commodo. Bccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum. Sed ut perspiciatisunde omnis iste natus error sit […]</p>
+									</div>
+									<div>
+											<a class="btn text-light mt-2 mb-5">Read More
+												<i class="fas fa-arrow-right"></i>
+											</a>
+										</div>
+								</div>
+							</div>
+						
+								<!--<nav aria-label="">
+									<ul class="pagination pagination-lg">
+										<li class="page-item active" aria-current="page">
+											<span class="page-link">
+												1
+											<span class="sr-only">(current)</span>
+											</span>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+									  </ul>
+								</nav>-->
+							
+						</div>
+						<div class="col-lg-4 mt-2 mt-lg-4">
+							<div class="blog-search blog-hover blog-width">
+								<div class="title-of-blog mb-4 pb-1">
+									<h3 class="blog-h3">Search</h3>
+								</div>
+								<div class="blog-search-box ">
+									<form class="position-relative">
+										<input type="text" placeholder="Search">
+										<button>
+											<i class="fas fa-search"></i>
+										</button>
+										
+									</form>
+								</div>
+							</div>
+							<div class="blog-width blog-hover">
+								<div class="title-of-blog mb-4 pb-1">
+									<h3 class="blog-h3">Recent Post</h3>
+								</div>
+								<ul class="list-unstyled">
+									<li class="d-flex pb-3 border-bottom">
+										<div class="widget-posts-image">
+											<a href="#">
+												<img src="../images/b1.jpg">
+											</a>
+										</div>
+										<div class="widget-posts-body ">
+											<h6 class="widget-posts-title"><a href="#">But there is a downside. Simply running</a></h6>
+											<div class="widget-posts-meta">July 28, 2019</div>
+										</div>
+									</li>
+									<li class="d-flex py-3 border-bottom">
+										<div class="widget-posts-image">
+											<a href="#">
+												<img src="../images/blog-1.jpg">
+											</a>
+										</div>
+										<div class="widget-posts-body ">
+											<h6 class="widget-posts-title"><a href="#">To help ease the process, we identified</a></h6>
+											<div class="widget-posts-meta">July 16, 2019</div>
+										</div>
+									</li>
+									<li class="d-flex pt-3">
+										<div class="widget-posts-image">
+											<a href="#">
+												<img src="../images/blog-2.jpg">
+											</a>
+										</div>
+										<div class="widget-posts-body ">
+											<h6 class="widget-posts-title"><a href="#">To help ease the process, we identified</a></h6>
+											<div class="widget-posts-meta">July 26, 2019</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="blog-width blog-hover Categories">
+								<div class="title-of-blog mb-4 pb-1">
+									<h3 class="blog-h3">Categories</h3>
+								</div>
+								<ul class="list-unstyled my-0">
+									<li class=""><a href="#">Action</a> (5)</li>
+									<li class=""><a href="#">Advancer</a> (6)</li>
+									<li class=""><a href="#">Animation</a> (6)</li>
+									<li class=""><a href="#">Branding</a> (6)</li>
+									<li class=""><a href="#">Fashion</a> (5)</li>
+									<li class="border-bottom-0 pb-0"><a href="#">Shooter</a> (5)</li>
+								</ul>
+							</div>
+							<div class="blog-social blog-hover blog-width">
+								<div class="title-of-blog mb-4 pb-1">
+									<h3 class="blog-h3">Social Profiles</h3>
+								</div>
+								<div class="blog-social-icon ">
+							        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+									<a href="http://behance.com"><i class="fab fa-behance"></i></a>
+									<a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+									<a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+		        				</div>
+							</div>
+							<div class="blog-tabs blog-hover blog-width">
+								<div class="title-of-blog mb-4 pb-1">
+									<h3 class="blog-h3">Social Profiles</h3>
+								</div>
+								<div class="blog-inner-tab ">
+									<a href="#" class="text-decoration-none">animation</a>
+									<a href="#" class="text-decoration-none">audio</a>
+									<a href="#" class="text-decoration-none">dance</a>
+									<a href="#" class="text-decoration-none">develop</a>
+									<a href="#" class="text-decoration-none">film</a>
+									<a href="#" class="text-decoration-none">icon</a>
+									<a href="#" class="text-decoration-none">movie</a>
+									<a href="#" class="text-decoration-none">Popular</a>
+									<a href="#" class="text-decoration-none">song</a>
+									<a href="#" class="text-decoration-none">usability</a>
+									<a href="#" class="text-decoration-none">video</a>
+									<a href="#" class="text-decoration-none">wp</a>
+		        				</div>
+							</div>
+							<div class="blog-width">
+								<a href="" class="d-block text-center"><img src="../images/banner.jpg" class="img-fluid "></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		<!-- blog-page End-->
+				
+		
+		
+		<!--footer strat-->
+			<footer>
+				<div class="footer-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-data-1">
+									<a href="#" class="mb-4 d-block">
+										<img src="../images/favicon.png" alt="logo">
+									</a>
+									<p class="text-dark mb-4">Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostru</p>
+									<div class="social-icon">
+										<a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+										<a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+										<a href="http://google-plus.com"><i class="fab fa-google-plus-g"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-3 md-lg-3">
+								<div class="footer-data-2">
+									<div class="footer-txt">
+										<h4 class="mb-4 ">Contact Info</h4>
+									</div>
+									<ul class="list-unstyled" >
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="fas fa-map-marked-alt"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>Address<h4>
+												<p>House - 4, Rosd - 7, East City. Sydney. Australya.</p>
+												
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="fas fa-phone"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>phone Us<h4>
+												<p >+821 (2365) 456 90</p>
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="footer-locat-icon">
+												<i class="far fa-envelope"></i>
+											</div>
+											<div class="footer-locat">
+												<h4>Mail Us<h4>
+												<p>support@gmail.com</p>
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-data-2">
+									<div class="footer-txt">
+										<h4 class="mb-4"> Services List</h4>
+									</div> 
+									<div class="service-list">
+										<ul class="list-unstyled">
+											<li><a href="#">Corporate Videography</a></li>
+											<li><a href="#">Video Editing / Effects</a></li>
+											<li><a href="#">Teleprompter Services</a></li>
+											<li><a href="#">Get Your Final Visual Effects</a></li>
+											<li><a href="#">Idea Generator & Direction</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3 mb-3 md-lg-3">
+								<div class="footer-txt">
+									<h4 class="mb-4"> Services List</h4>
+								</div> 
+								<ul class="instagram-img list-unstyled d-flex flex-wrap">
+									<li><a><img src="../images/inta-1.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-2.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-3.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-4.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-5.jpg" class="img-fluid"></a><li>
+									<li><a><img src="../images/inta-6.jpg" class="img-fluid"></a><li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6 text-light d-block text-center text-md-left">
+									<p>
+										Copyright © Fitaza 2018. All rights reserved.                     
+									</p>
+								</div>
+							
+								<div class="col-12 col-md-6 text-light d-block text-center text-md-right">
+									<p>
+										 Created by: ThemeChampion                     
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</footer>	
+		<!-- footer end -->
+		
+		
+		
+			<!-- Back-to-top Start -->
+		
+				<div class="backto-top">
+					<i class="fas fa-arrow-up"></i>
+				</div>
+			
+		<!-- Back-to-top End -->
+			
+	</body>
+</html>
